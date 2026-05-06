@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    background: #f6f3ef;
+    color: #2f2f2f;
+}
+
+/**/
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+nav h2 {
+    color: #b86b5b;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+
+    /* TAMBAHAN */
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #b86b5b;
+}
+
+nav a.active {
+    font-weight: bold;
+    border-bottom: 2px solid #b86b5b;
+}
+
+.hero {
+    background: #0f3b2e;
+    color: #e08a75;
+    padding: 80px 0;
+    text-align: center;
+
+    /* TAMBAHAN */
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    font-size: 56px;
+    font-weight: normal;
+
+    /* TAMBAHAN */
+    font-size: 40px;
+}
+
+/*khusus menu home*/
+.subtitle {
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+.desc {
+    margin-top: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #ffffff !important;
+    line-height: 1.8;
+}
+
+/*read all di menu news*/
+.read-btn {
+    display: inline-block;
+    margin-top: 40px;
+    font-size: 18px;
+    color: #ffffff !important;
+    text-decoration: none;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 5px;
+    transition: 0.3s;
+}
+
+.read-btn:hover {
+    opacity: 0.7;
+}
+
+/*container*/
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+/*image*/
+.profile-img {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto 30px auto;
+    border-radius: 10px;
+}
+
+.about-img {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: 20px auto 40px auto;
+    border-radius: 8px;
+}
+
+/*tittle*/
+.section-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #3f5c57;
+}
+
+/*card*/
+.card {
+    margin-bottom: 30px;
+}
+
+p {
+    line-height: 1.8;
+    color: #3c3c3c;
+}
+
+.news-page .card p {
+    color: #3c3c3c;
+}
+
+/*button*/
+.btn {
+    text-decoration: underline;
+    color: #b86b5b;
+}
+
+/*form*/
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/*footer*/
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #aaa;
+}
+
+/*responsive*/
+@media(max-width:768px){
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    /* TAMBAHAN */
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .profile-img {
+        max-width: 250px;
+    }
+}
